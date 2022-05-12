@@ -1,0 +1,68 @@
+/* CSS classes you can use on your table td to display the relevant tile */
+td.unopened {
+  background: url('../assets/images/buscaminas/unopened.svg');
+  cursor: pointer;
+}
+td.opened {
+  background: url('../assets/images/buscaminas/opened.svg');
+}
+td.flagged {
+  background: url('../assets/images/buscaminas/flag.svg');
+}
+td.question {
+  background: url('../assets/images/buscaminas/question.svg');
+}
+td.mine {
+  background: url('../assets/images/buscaminas/mine.png');
+}
+td.mine-neighbour-1 {
+  background: url('../assets/images/buscaminas/1.svg');
+}
+td.mine-neighbour-2 {
+  background: url('../assets/images/buscaminas/2.svg');
+}
+td.mine-neighbour-3 {
+  background: url('../assets/images/buscaminas/3.svg');
+}
+td.mine-neighbour-4 {
+  background: url('../assets/images/buscaminas/4.svg');
+}
+td.mine-neighbour-5 {
+  background: url('../assets/images/buscaminas/5.svg');
+}
+td.mine-neighbour-6 {
+  background: url('../assets/images/buscaminas/6.svg');
+}
+td.mine-neighbour-7 {
+  background: url('../assets/images/buscaminas/7.svg');
+}
+td.mine-neighbour-8 {
+  background: url('../assets/images/buscaminas/8.svg');
+}
+
+/* Positioning the Minesweep table and make sure the cells are square */
+table #minesweeper {
+  margin: auto;
+  margin-top: 3em;
+  border: 1px solid #999;
+  border-collapse: collapse;
+}
+table #minesweeper td {
+  width: 24px;
+  height: 24px;
+  background-size: cover;
+}
+
+
+
+.minesweeper-1 {
+  display: flex;
+  flex-direction: column;
+} 
+.minesweeper-2 {
+  flex-grow: 1;
+  /* display: flex; */
+}
+.minesweeper-3 {
+
+}

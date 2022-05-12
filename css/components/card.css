@@ -1,0 +1,29 @@
+.product > a > img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 0 0 5px 5px;
+  display: block;      /* so the a tag occupies just the space of the img  */
+}
+
+.product {
+  border-radius: 5px;
+  box-shadow: 1px 1px 20px -5px rgb(0, 0, 0, 50%);
+  position: relative;
+}
+
+.product > a {
+  display: block;     /* to get rid of weird upper margin above the h3 */
+}
+
+.mobile {
+  position: absolute;
+  width: 7vh;
+  height: 14vh;     /* height,width respect the vh to mantain the aspect ratio */
+  border: 2.5px solid black;
+  border-radius: 5px;
+  bottom: -5px;
+  right: -5px;
+  background-image: url(../../img/browser.png);
+  background-size: cover;
+  background-position: center;
+}

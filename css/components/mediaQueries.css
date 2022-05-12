@@ -1,0 +1,17 @@
+@media (max-width: 767px) {
+  h1 {
+      background-color: #0074d9;
+  }
+  main {
+      padding: 30px;
+  }
+}
+
+@media (max-width: 456px) {
+  h1 {
+      background-color: #009E4F;
+  }
+  main {
+      padding: 14px;
+  }
+}

@@ -1,0 +1,123 @@
+/* GOOGLE FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@700');
+/* COMPONENTS */
+
+@import url("components/button.css");
+@import url("components/card.css");
+
+/* GENERAL SETUP */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Open Sans;
+  background: linear-gradient(160deg, rgb(52, 123, 73), rgb(52, 123, 73));
+  /* background: linear-gradient(160deg, #faf, #88f); */
+  background-size: cover;
+  background-attachment: fixed;    /* The background is fixed relative to the viewport.  */
+}
+h1, h2, h3 {
+  font-family: Poppins;
+}
+h3 {
+  font-size: 0.83rem;
+  background: #111;
+  color: #fff;
+  line-height: 22px;
+  border-radius: 5px 5px 0 0;
+}
+h3::before {
+  content: "\00a0\00a0\00a0🔴 🟢  \00a0 \00a0";
+  font-size: 0.66rem;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+main {
+  width: 100%;
+  max-width: 900px;
+  background: #fff;
+  margin: 60px auto;
+  padding: 60px;
+}
+
+
+/* --------------- PANEL --------------- */
+.panel {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  column-gap: 6%;
+}
+.push-desktop {
+  flex: 1;        /* the remaining space is filled by this */
+}
+.logo img {
+  width: 120px;
+  height: auto;
+}
+/* ------------ */
+.networks img {
+  width: 44px;
+  height: auto;
+}
+.networks {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 25px;
+  align-content: space-between;
+}
+.networks img { display: block; }     /* so the a tag occupies just the space of the img  */
+
+
+/* --------------- SELF_INTRO --------------- */
+.self-intro {
+  padding: 20px 0;
+  text-align: justify;
+}
+
+/* --------------- PRODUCTS --------------- */
+.products_display {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 3%;
+  row-gap: 40px;
+}
+
+
+/* --------------- MEDIA_QUERIES--------------- */
+@media (max-width: 767px) {
+  h1 {
+      background-color: #0074d9;
+  }
+  main {
+      padding: 30px;
+  }
+  .panel {
+    flex-wrap: wrap;
+    row-gap: 18px;
+  }
+.networks {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;      /* this makes that .networks goes below */
+  }
+.products_display {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 456px) {
+  h1 {
+      background-color: #009E4F;
+  }
+  main {
+      padding: 14px;
+  }
+  .products_display {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
