@@ -8,7 +8,8 @@
   content: "🙂 ";
 }
 .button-contact {
-  background: #0074d9;
+  /* background: #0074d9; */
+  background: #00d9b1;
   color: #fff;
   transition: background .3s;
 }
@@ -16,7 +17,8 @@
   content: "🤗 ";
 }
 .button-contact:hover {
-  background: #005197;
+  /* background: #005197; */
+  background: #01b392;
 }
 .button-resume::before {                /* B_RESUME*/
   content: "📜 ";

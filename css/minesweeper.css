@@ -55,14 +55,15 @@ table #minesweeper td {
 
 
 
-.minesweeper-1 {
+.minesweeper-product {
   display: flex;
   flex-direction: column;
+  background-image: url('https://c.tenor.com/4wAtE3WwF1wAAAAd/space-gif-space.gif');
 } 
-.minesweeper-2 {
+.minesweeper-wrapper {
   flex-grow: 1;
-  /* display: flex; */
-}
-.minesweeper-3 {
-
+  margin: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

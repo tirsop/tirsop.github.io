@@ -1,12 +1,12 @@
-const GRIDX = 3;
-const GRIDY = 4;
+const GRIDX = 4;
+const GRIDY = 8;
 const MINE_FREQUENCY = 0.2;
 
 const isOver = () => {
   const unopened = document.querySelectorAll('.unopened');
   if (unopened.length === 0) {
     setTimeout(() => {
-      alert("YOU WIN👏");
+      alert("YOU WIN 👏🏿👏👏🏽");
       window.location.reload();
     }, 100);
   }
@@ -70,7 +70,7 @@ const openOnClick = (e) => {
       cell.classList.add('mine');
     });
     setTimeout(() => {
-      alert("GAME OVER");
+      alert("💥GAME OVER. Try again!😁");
       window.location.reload();
     }, 100);
   } else {
