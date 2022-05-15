@@ -82,8 +82,8 @@ const openOnClick = (e) => {
 const flagOnClick = (e) => {
   e.preventDefault(); // Do not open context menu
   const tile = e.currentTarget;
-  tile.classList.remove('unopened');
-  tile.classList.add('flagged');
+  tile.classList.toggle('unopened');
+  tile.classList.toggle('flagged');
   isOver();
 };
 
