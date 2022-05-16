@@ -1,0 +1,235 @@
+/* --------------- INITIAL_SETUP --------------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* a {
+    background: yellow;
+} */
+html,
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    display: block;
+    height: 100%;
+    /* why */
+}
+body {
+    background: linear-gradient(160deg, #faf, #88f);
+    background-size: cover;
+    background-attachment: fixed;    /* The background is fixed relative to the viewport.  */
+}
+main {
+     width: 100%;
+     max-width: 900px;
+     background: #fff;
+     margin: 60px auto;
+     padding: 60px;
+}
+h1 {
+    font-weight: bold;
+    font-size: 2rem;
+    letter-spacing: 1.5px;
+}
+h2 {
+    font-weight: bold;
+    font-size: 1.44rem;   /* 26px */
+    padding: 1.23em 0 0;
+}
+h3 {
+    font-size: 0.83rem;
+    background: #111;
+    color: #fff;
+    line-height: 22px;
+    border: 1px solid #111;
+    border-radius: 5px 5px 0 0;
+}
+h3::before {
+    content: "\00a0\00a0\00a0🔴 🟢  \00a0 \00a0";
+    font-size: 0.66rem;
+}
+
+
+/* --------------- PANEL --------------- */
+.panel {
+    display: flex;
+    flex-direction: row; /* defines main axis */
+    justify-content: space-between;
+    margin: 20px 0;
+    column-gap: 6%;
+}
+.logo img {
+    width: 120px;
+    height: auto;
+}
+.push-desktop {
+    flex: 1;        /* the remaining space is filled by this */
+}
+.push-desktop p {
+    margin: 5px 0 12px;
+    font-size: 1.1rem;  /* 20px */
+}
+.networks {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-content: space-between;
+    column-gap: 32px;
+}
+.networks img {
+    width: 44px;
+    height: auto;
+}
+/* following 2 prop.: for display prperly the img inside the a */
+.networks img { display: block; }
+.networks a { display: inline-block; }
+
+/* --------------- BUTTONS --------------- */
+.buttons {
+    font-size: 1rem;
+    padding: 0.33em 0.89em;
+    text-decoration: none;
+    border-radius: .2em;
+}
+.button-contact::before {                /* B_CONTACT */
+    content: "🙂 ";
+}
+.button-contact {
+    background: #0074d9;
+    color: #fff;
+    transition: background .3s;
+}
+.button-contact:hover:before {
+    content: "🤗 ";
+}
+.button-contact:hover {
+    background: #005197;
+}
+.button-resume::before {                /* B_RESUME*/
+    content: "📜 ";
+}
+.button-resume {
+    background: #fff;
+    color: #111;
+}
+.button-resume:hover {
+    background-image: linear-gradient(to right,
+       #E7484F,
+       #E7484F 16.65%,
+       #F68B1D 16.65%,
+       #F68B1D 33.3%,
+       #FCED00 33.3%,
+       #FCED00 49.95%,
+       #009E4F 49.95%,
+       #009E4F 66.6%,
+       #00AAC3 66.6%,
+       #00AAC3 83.25%,
+       #732982 83.25%,
+       #732982 100%,
+       #E7484F 100%
+     );
+   animation: slidebg 2s linear infinite;
+}
+@keyframes slidebg {
+    to {
+    background-position:20vw;
+    }
+}
+
+/* --------------- SELF_INTRO --------------- */
+.self-intro {
+    font-size: 1rem;
+    padding: 20px 0;
+    text-align: justify;
+}
+
+/* --------------- Section_PRODUCTS --------------- */
+#products p {
+    font-size: 1rem;
+    padding: 9px 0 18px;
+}
+.products_display {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 5%;
+    row-gap: 50px;
+}
+.products_display a {
+    text-decoration: none;
+    border-radius: 5px;
+}
+.browser img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0 0 5px 5px;
+}
+.product {
+    box-shadow: 1px 1px 20px -5px rgb(0, 0, 0, 50%);
+}
+/* following 2 prop.: for display prperly the img inside the a */
+.browser img { display: block; }
+.product a { display: block; }
+
+
+/* --------------- MEDIA_QUERIES--------------- */
+@media (max-width: 767px) {
+    /* h1 {
+        background-color: #0074d9;
+    } */
+    main {
+        padding: 30px;
+    }
+    .panel {
+        flex-wrap: wrap;
+        row-gap: 18px;
+    }
+    .networks {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;            /* so it expands through all the network's width */
+    }
+    h3 {
+        font-size: 0.67rem;
+        line-height: 17px;
+    }
+}
+
+@media (max-width: 456px) {
+    /* h1 {
+        background-color: #009E4F;
+    } */
+    html {
+        font-size: 16px;
+    }
+    main {
+        padding: 14px;
+    }
+    h1 {
+        font-size: 1.8rem;
+    }
+    .panel {
+        margin: 0 0 20px;                 /* top horizontal bottom    */
+        flex-wrap: wrap;
+        row-gap: 18px;
+        justify-content: space-around;
+    }
+    .panel :nth-of-type(1) { order: 1; }
+    .panel :nth-of-type(2) { order: 3; }
+    .panel :nth-of-type(3) { order: 2; }
+
+    .push-desktop {
+        min-width: 255px;
+    }
+    .networks {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-content: space-between;
+        column-gap: 32px;
+        width: auto;
+    }
+    .products_display {
+        margin: 0 15px;
+        grid-template-columns: 1fr;
+        row-gap: 22px;
+    }
+}
