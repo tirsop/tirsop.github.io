@@ -108,7 +108,7 @@ allTiles.forEach((td) => {
   }
 
   // td.addEventListener('click', openOnClick);
-  td.addEventListener('contextmenu', flagOnClick);
+  // td.addEventListener('contextmenu', flagOnClick);
 
   td.addEventListener("touchstart", (e) => {
     let startTime = e.timeStamp;
@@ -117,7 +117,7 @@ allTiles.forEach((td) => {
       let touchTime = endTime - startTime;
       console.log(touchTime);
       if (touchTime > longTouch) {
-        flagOnClick();
+        td.addEventListener('contextmenu', flagOnClick);
       } else {
         td.addEventListener('click', openOnClick);
       }
