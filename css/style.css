@@ -40,7 +40,7 @@ h3 {
   border-radius: 5px 5px 0 0;
 }
 h3::before {
-  /* content: "\00a0\00a0\00a0🔴 🟢  \00a0 \00a0"; */
+  content: "\00a0\00a0\00a0🔴 🟢  \00a0 \00a0";
   font-size: 0.66rem;
 }
 a {
