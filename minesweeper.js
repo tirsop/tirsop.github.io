@@ -1,7 +1,7 @@
 const GRIDX = 4;
 const GRIDY = 8;
 const MINE_FREQUENCY = 0.2;
-const longTouch = 500;
+const longTouch = 200;
 
 const isOver = () => {
   const unopened = document.querySelectorAll('.unopened');
