@@ -1,6 +1,7 @@
 const GRIDX = 4;
 const GRIDY = 8;
 const MINE_FREQUENCY = 0.2;
+const longTouch = 500;
 
 const isOver = () => {
   const unopened = document.querySelectorAll('.unopened');
@@ -106,6 +107,20 @@ allTiles.forEach((td) => {
     td.classList.add('has-mine');
   }
 
-  td.addEventListener('click', openOnClick);
+  // td.addEventListener('click', openOnClick);
   td.addEventListener('contextmenu', flagOnClick);
+
+  td.addEventListener("touchstart", (e) => {
+    let startTime = e.timeStamp;
+    td.addEventListener("touchend", e2 => {
+      let endTime = e2.timeStamp;
+      let touchTime = endTime - startTime;
+      console.log(touchTime);
+      if (touchTime > longTouch) {
+        flagOnClick();
+      } else {
+        td.addEventListener('click', openOnClick);
+      }
+    })
+  })
 });
