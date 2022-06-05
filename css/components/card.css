@@ -17,17 +17,23 @@
 
 .mobile {
   position: absolute;
-  width: 6vw;
-  height: 12vw;          /* height,width respect the vw to mantain the aspect ratio. Values for the screen-breakpoint */
-  max-width: 60px;      /* max in both to limit size in super-wide screens*/
-  max-height: 120px;
+  width: 7vw;
+  height: 13vw;          /* height,width respect the vw to mantain the aspect ratio. Values for the screen-breakpoint */
+  max-width: 61px;      /* max in both to limit size in super-wide screens*/
+  max-height: 126px;
+
   border: 2.5px solid black;
   border-radius: 5px;
   bottom: -5px;
   right: -5px;
-  background-image: url(../../img/browser.png);
+  /* background-image: url(../../img/browser.png);
   background-size: cover;
-  background-position: center;
+  background-position: center; */
+}
+
+.mobile video {
+  width: 100%;
+  height: 100%;
 }
 
 /* --------------- MEDIA_QUERIES--------------- */

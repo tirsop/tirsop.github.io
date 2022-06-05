@@ -5,7 +5,7 @@
 /* COMPONENTS */
 @import url("components/button.css");
 @import url("components/card.css");
-@import url("components/avatar.css");
+@import url("components/tooltip.css");
 
 /* GENERAL SETUP */
 * {
@@ -19,8 +19,10 @@ html {      /* so you cannot see background when you scroll down to the bottom*/
 body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 500;
-  background: linear-gradient(160deg, rgb(52, 123, 73), rgb(52, 123, 73));
+  /* background: linear-gradient(160deg, rgb(52, 123, 73), rgb(52, 123, 73)); */
   /* background: linear-gradient(160deg, #faf, #88f); */
+  background: linear-gradient(160deg, #222E50, #B37BA4);
+  /* #46237A */
   background-size: cover;
   background-attachment: fixed;    /* The background is fixed relative to the viewport.  */
 }
@@ -32,6 +34,9 @@ h1 {
   font-size: 38px;
   letter-spacing: 1.5px;
 }
+h2 {
+  margin-bottom: 10px;
+}
 h3 {
   font-size: 14px;
   background: #111;
@@ -40,7 +45,7 @@ h3 {
   border-radius: 5px 5px 0 0;
 }
 h3::before {
-  /* content: "\00a0\00a0\00a0🔴 🟢  \00a0 \00a0"; */
+  content: "\00a0\00a0\00a0🔴 🟢  \00a0 \00a0";
   font-size: 0.66rem;
 }
 a {
@@ -56,12 +61,13 @@ main {
   background: #fff;
   margin: 60px auto;
   padding: 60px;
+  border-radius: 16px;
 }
 p {
   padding: 0 0 14px;    /* top | horizontal | bottom */
   line-height: 24px;
 }
-header {display: none;}
+/* header {display: none;} */
 /* REMOVEEeeeeeeeeeee */
 
 /* --------------- PANEL --------------- */
@@ -69,7 +75,12 @@ header {display: none;}
   display: flex;
   justify-content: space-between;
   margin: 20px 0;
-  column-gap: 6%;
+  column-gap: 5%;
+}
+.avatar img {
+  width: 120px;
+  height: auto;
+  border-radius: 50%;
 }
 .push-desktop {
   flex: 1;        /* the remaining space is filled by this */
@@ -88,8 +99,8 @@ header {display: none;}
 .networks {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  column-gap: 25px;
-  align-content: space-between;
+  gap: 16px;
+  /* align-content: space-between; */
 }
 .networks img { display: block; }     /* so the a tag occupies just the space of the img  */
 
@@ -107,49 +118,6 @@ header {display: none;}
   grid-template-columns: repeat(3, 1fr);
   column-gap: 3%;
   row-gap: 40px;
-}
-
-/* --------------- TOOLTIPS--------------- */
-.coding-icons img {
-  width: 20px;
-  height: auto;
-}
-/* Tooltip container */
-.tooltip {
-  position: relative;
-  display: inline-block;
-}
-/* Tooltip text */
-.tooltip .tooltiptext {
-  visibility: hidden;
-  background-color: rgb(196, 196, 196);
-  color: #fff;
-  text-align: center;
-  padding: 6px;
-  border-radius: 6px;
-  /* Position the tooltip text */
-  position: absolute;
-  z-index: 1;
-  bottom: -28%;
-  left: 0%;
-  /* Fade in tooltip */
-  opacity: 0;
-  transition: opacity 0.3s;
-}
-/* Tooltip arrow */
-.tooltip .tooltiptext::after {
-  content: "";
-  position: absolute;
-  top: -26%;
-  left: 8%;
-  border-width: 5px;
-  border-style: solid;
-  border-color: transparent transparent rgb(196, 196, 196)  transparent;
-}
-/* Show the tooltip text when you mouse over the tooltip container */
-.tooltip:hover .tooltiptext {
-  visibility: visible;
-  opacity: 1;
 }
 
 
