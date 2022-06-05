@@ -1,19 +1,12 @@
-.product > a > img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 0 0 5px 5px;
-  display: block;      /* so the a tag occupies just the space of the img  */
+.product > a {
+  display: block;     /* to get rid of weird upper margin above the h3 */
 }
-
 .product {
   border-radius: 5px;
   box-shadow: 1px 1px 20px -5px rgb(0, 0, 0, 50%);
   position: relative;
 }
 
-.product > a {
-  display: block;     /* to get rid of weird upper margin above the h3 */
-}
 
 .mobile {
   position: absolute;
@@ -21,7 +14,7 @@
   height: 13vw;          /* height,width respect the vw to mantain the aspect ratio. Values for the screen-breakpoint */
   max-width: 61px;      /* max in both to limit size in super-wide screens*/
   max-height: 126px;
-
+  
   border: 2.5px solid black;
   border-radius: 5px;
   bottom: -5px;
@@ -31,7 +24,10 @@
   background-position: center; */
 }
 
-.mobile video {
+.product > a > img {
+  display: block;      /* so the a tag occupies just the space of the img  */
+}
+.product video, .product img {
   width: 100%;
   height: 100%;
 }

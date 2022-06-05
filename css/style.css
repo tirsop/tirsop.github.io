@@ -14,7 +14,7 @@
   box-sizing: border-box;
 }
 html {      /* so you cannot see background when you scroll down to the bottom*/
-  height: 100%;
+  /* height: 100%; */
 }
 body {
   font-family: 'Open Sans', sans-serif;
@@ -45,7 +45,7 @@ h3 {
   border-radius: 5px 5px 0 0;
 }
 h3::before {
-  content: "\00a0\00a0\00a0🔴 🟢  \00a0 \00a0";
+  /* content: "\00a0\00a0\00a0🔴 🟢  \00a0 \00a0"; */
   font-size: 0.66rem;
 }
 a {
@@ -67,7 +67,7 @@ p {
   padding: 0 0 14px;    /* top | horizontal | bottom */
   line-height: 24px;
 }
-/* header {display: none;} */
+header {display: none;}
 /* REMOVEEeeeeeeeeeee */
 
 /* --------------- PANEL --------------- */
@@ -109,6 +109,9 @@ p {
 .self-intro {
   padding: 20px 0;
   text-align: justify;
+}
+.self-intro p {
+  margin-bottom: 20px;
 }
 
 /* --------------- PRODUCTS --------------- */
@@ -173,4 +176,11 @@ p {
 }
 
 
-
+/* contact by email */
+/* poner resume en boton de resume */
+/* subir una web con mongo a heroku */
+/* minesweeper tactil */
+/* arrows in mapbox */
+/* reproduce video on hover */
+/* border on tooltip */
+/* border-bottom despues de main*/

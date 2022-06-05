@@ -1,7 +1,6 @@
 /* --------------- TOOLTIPS--------------- */
-.coding-icons img {
-  width: 20px;
-  height: auto;
+.icon-rails {
+  font-size: 24px;
 }
 /* Tooltip container */
 .tooltip {
