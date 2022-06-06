@@ -28,20 +28,20 @@
           <h1>Tirso &nbsp;Pascual</h1> <!-- &nbsp; means an extra space -->
           <p>&nbsp;Tokyo-based Software Engineer. レーサー。</p>
           <div class="btns">
-            <a href="#" class="buttons button-contact">Contact</a>
-            <a href="#" class="buttons button-resume pseudo">Resume</a>
+            <a href="mailto:tirsonihon@gmail.com" class="buttons button-contact">Contact</a>
+            <a href="/resume/index.html" class="buttons button-resume">Resume</a>
           </div>
         </div>
 
         <div class="networks">
-          <a href="#" class="link">
-            <img src="img/GitHub-Mark-120px-plus.png" alt="GitHub">
+          <a href="https://github.com/tirsop" class="link">
+            <img src="assets/images/github-logo.png" alt="GitHub">
           </a>
-          <a href="#" class="link">
-            <img src="img/linkedin-logo.png" alt="GitHub">
+          <a href="https://www.linkedin.com/in/tirsopascual/" class="link">
+            <img src="assets/images/linkedin-logo.png" alt="Linkedin">
           </a>
-          <a href="#" class="link">
-            <img src="img/linkedin-logo.png" alt="GitHub">
+          <a href="https://www.wantedly.com/id/tirsopascual" class="link">
+            <img src="assets/images/wantedly-logo.png" alt="GitHub">
           </a>
           <a href="#" class="link">
             <img src="img/GitHub-Mark-120px-plus.png" alt="GitHub">
@@ -50,9 +50,14 @@
       </div>
 
       <div class="self-intro">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam quibusdam suscipit dolore consequuntur ea
-          deserunt odit expedita minus, fuga nostrum ex consequatur voluptatem! Dolorem, illum officia quae recusandae
-          sequi earum!</p>
+        <!-- <p>I like to think I'm an Inventor, who takes a blurry idea and takes it to completion, sometimes ending up
+          being something stupid but always adquiring rich knowledge.
+          Before I used to design cars, and now I try to build great software. In my spare time, you will find me
+          surfing, hiking or driving in my simulator. Enjoy my website and feel free to ask me anything 😄 -->
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum dicta inventore tempora ducimus quam quidem
+          aspernatur fuga numquam, assumenda ratione dolorum, rem atque iste debitis cumque necessitatibus placeat
+          delectus? Provident.</p>
+        </p>
       </div>
     </header>
 
@@ -63,11 +68,11 @@
 
       <div class="products_display">
         <div class="product tooltip">
-          <a href="www.allymaps.com" target="_blank">
+          <a href="https://www.allymaps.com" target="_blank">
             <h3>Ally Maps <i class="fas fa-wheelchair"></i></h3>
             <img src="assets/images/allymaps-desktop.jpeg" alt="allymaps.com">
             <div class="mobile">
-              <video src="assets/videos/allymaps-mobile.mov" muted>
+              <video src="assets/videos/allymaps-mobile.mov" autoplay loop muted>
                 Your browser does not support the video tag.
               </video>
             </div>
@@ -80,12 +85,13 @@
             <i class="icon-html devicon-html5-plain-wordmark colored "></i>
             <i class="icon-css devicon-css3-plain-wordmark colored "></i>
             <i class="icon-sass devicon-sass-original colored"></i>
+            <i class="icon-bootstrap devicon-bootstrap-plain-wordmark colored"></i>
           </span>
         </div>
 
         <div class="product tooltip">
           <a href="#" target="_blank">
-            <h3>Spanish Restaurants Tokyo</h3>
+            <h3>Spanish Food in Tokyo</h3>
             <img src="img/browser.png" alt="">
             <div class="mobile"></div>
           </a>
@@ -117,6 +123,7 @@
             <i class="icon-html devicon-html5-plain-wordmark colored "></i>
             <i class="icon-css devicon-css3-plain-wordmark colored "></i>
             <i class="icon-sass devicon-sass-original colored"></i>
+            <i class="icon-bootstrap devicon-bootstrap-plain-wordmark colored"></i>
           </span>
         </div>
 
@@ -141,9 +148,9 @@
         </div>
 
         <div class="product tooltip">
-          <a href="www.megumikataoka.com" target="_blank">
+          <a href="https://www.megumikataoka.com" target="_blank">
             <h3>Megumi's artwork</h3>
-            <video src="assets/videos/megimi-desktop.mov" muted>
+            <video src="assets/videos/megimi-desktop.mov" autoplay loop muted>
               Your browser does not support the video tag.
             </video>
             <!-- <img src="assets/images/megumi-desktop.jpeg" alt="megumikataoka.com"> -->
@@ -159,7 +166,7 @@
         </div>
 
         <div class="product minesweeper-product tooltip">
-          <h3>MINESWEEPER</h3>
+          <h3>Minesweeper game</h3>
           <div class="minesweeper-wrapper">
             <table>
               <tbody id="minesweeper">
@@ -167,19 +174,31 @@
             </table>
           </div>
           <span class="tooltiptext coding-icons">
-            <img src="assets/icons/html5-50-transparent.png" alt="" title="html">
-            <img src="assets/icons/css3-50-transparent.png" alt="" title="css">
-            <img src="assets/icons/javascript-50.png" alt="" title="JS">
+            <i class="icon-html devicon-html5-plain-wordmark colored "></i>
+            <i class="icon-css devicon-css3-plain-wordmark colored "></i>
+            <i class="icon-js devicon-javascript-plain colored"></i>
           </span>
         </div>
 
-
-
-
-
-
-
       </div>
+    </section>
+
+    <section id="experiments">
+      <h2>Experiments:</h2>
+      <p>Quick prototypes, work in progress or abandoned experiments I've done in Javascript:</p>
+
+      <div class="experiments_display">
+        <div class="experiment">
+          <a href="https://github.com/tirsop/Authentication-with-Bcrypt" target="_blank">
+            <h3>🔐 Authentication with Bcrypt</h3>
+          </a>
+          <p>Demo showing the functionality of Bcrypt and how to store user passwords in MongoDB.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="stack">
+
     </section>
 
   </main>
