@@ -57,8 +57,11 @@ p {
   padding: 0 0 14px;    /* top | horizontal | bottom */
   line-height: 24px;
 }
-/* header {display: none;} */
-/* #products {display: none;} */
+section { margin-bottom: 56px; }
+section:last-child { margin-bottom: 0px; }
+header {display: none;}
+#products {display: none;}
+#contributions {display: none;}
 /* REMOVEEeeeeeeeeeee */
 
 /* --------------- PANEL --------------- */
@@ -108,7 +111,6 @@ p {
 /* --------------- PRODUCTS --------------- */
 .products_display {
   margin-top: 20px;
-  margin-bottom: 56px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 3%;
@@ -137,6 +139,15 @@ p {
   margin-left: 4px;
 }
 
+/* --------------- GITHUB CONTRIBUTIONS--------------- */
+#contributions div {
+  display: flex;
+}
+#contributions img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
 /* --------------- MEDIA_QUERIES--------------- */
 @media (max-width: 767px) {
   h1 {
