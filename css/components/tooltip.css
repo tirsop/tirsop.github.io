@@ -1,4 +1,7 @@
 /* --------------- TOOLTIPS--------------- */
+.coding-icons {
+  font-size: 22px;
+}
 /* Tooltip container */
 .tooltip {
   position: relative;
@@ -9,7 +12,7 @@
   visibility: hidden;
   background-color: #f7f7f7;
   text-align: center;
-  padding: 6px;
+  padding: 1px 8px;
   border-radius: 6px;
   border: 2px solid #222E50;
   /* Position the tooltip text */
@@ -29,7 +32,7 @@
   left: 8%;
   background: #f7f7f7;
   width: 10px;
-  height: 10px;
+  height: 8px;
   transform: rotate(45deg);
   border: 2px solid #222E50;
   border-color: #222E50 transparent transparent #222E50;

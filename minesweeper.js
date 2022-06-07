@@ -112,6 +112,6 @@ allTiles.forEach((td) => {
 
   // to alert the user if they try to play in phones
   td.addEventListener("touchstart", (e) => {
-    alert("Only works on desktop");
+    alert("Minesweeper doesn't work properly on tactil devices");
   })
 });
