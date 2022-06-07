@@ -110,19 +110,8 @@ allTiles.forEach((td) => {
   td.addEventListener('click', openOnClick);
   td.addEventListener('contextmenu', flagOnClick);
 
+  // to alert the user if they try to play in phones
   td.addEventListener("touchstart", (e) => {
     alert("Only works on desktop");
   })
-  //   let startTime = e.timeStamp;
-  //   td.addEventListener("touchend", e2 => {
-  //     let endTime = e2.timeStamp;
-  //     let touchTime = endTime - startTime;
-  //     console.log(touchTime);
-  //     if (touchTime > longTouch) {
-  //       td.addEventListener('contextmenu', flagOnClick);
-  //     } else {
-  //       td.addEventListener('click', openOnClick);
-  //     }
-  //   })
-  // })
 });
