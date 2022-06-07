@@ -57,8 +57,8 @@ p {
   padding: 0 0 14px;    /* top | horizontal | bottom */
   line-height: 24px;
 }
-/* header {display: none;}
-#products {display: none;} */
+/* header {display: none;} */
+/* #products {display: none;} */
 /* REMOVEEeeeeeeeeeee */
 
 /* --------------- PANEL --------------- */
@@ -114,17 +114,7 @@ p {
   column-gap: 3%;
   row-gap: 40px;
 }
-#products h3 {
-  font-size: 14px;
-  background: #111;
-  color: #fff;
-  line-height: 20px;
-  border-radius: 5px 5px 0 0;
-}
-#products h3::before {
-  content: "\00a0\00a0\00a0🔴 🟢  \00a0 \00a0";
-  font-size: 0.66rem;
-}
+
 
 /* --------------- EXPERIMENNTS --------------- */
 .experiments_display {
@@ -207,6 +197,19 @@ p {
 /* subir una web con mongo a heroku */
 /* minesweeper tactil */
 /* arrows in mapbox */
+/* referral en line y indeed */
 /* reproduce video on hover */
 /* border on tooltip */
 /* border-bottom despues de main*/
+
+
+/* todas img de mismo tamano
+cover no se deforma
+h3 height 20px
+img height calc(100%-20px) */
+/* lightbox js */
+
+/* formulatio megumi tipi emial */
+
+/* megumi kataoka img 100% y grd colum gap 10px */
+/* buscar consexiones linkein, como conseguiste trabajo, */

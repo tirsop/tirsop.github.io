@@ -1,9 +1,7 @@
-var figure = $(".mobile").hover(hoverVideo, hideVideo);
-
-function hoverVideo(e) {
-  $('video', this).get(0).play();
-}
-
-function hideVideo(e) {
-  $('video', this).get(0).pause();
-}
+document.querySelectorAll('video').forEach(v => {
+  v.addEventListener('mouseover', () => {
+    if (!v.src) {
+      v.src = v.dataset.src;
+    }
+  });
+});

@@ -5,7 +5,7 @@
 /* #tech-stack {display: none;} */
 /* #projects {display: none;} */
 /* #experience {display: none;} */
-#formation {display: none;}
+/* #formation {display: none;} */
 
 * {
   margin: 0;
@@ -28,15 +28,18 @@ body {
   background: #fff;
   margin: 60px auto 200px;
   max-width: 900px;
-  padding: 5rem;
+  /* padding: 5rem; */
   box-shadow: 0 0 10px #ccc;
+}
+main {
+  padding: 80px;
 }
 
 h1 {
   font-size: 32px;
   font-weight: normal;
   /* border-bottom: 2px solid #faf; */
-  border-bottom: 2px solid #26ff00;
+  border-bottom: 2px solid #2e00ff;
   padding-bottom: 10px;
   /* distance between the text and the line */
   margin-bottom: 10px;
@@ -48,7 +51,7 @@ h2 {
   font-weight: normal;
   padding-top: 20px;
   /* border-bottom: 2px dashed #faf; */
-  border-bottom: 2px dashed #26ff00;
+  border-bottom: 2px dashed #2e00ff;
   padding-bottom: 6px;
   margin-bottom: 16px;
 }
@@ -183,4 +186,18 @@ ul li {
   flex-wrap: wrap;
   column-gap: 8px;
   row-gap: 3px;
+}
+
+
+/* --------------- MEDIA_QUERIES--------------- */
+@media (max-width: 767px) {
+  main {
+      padding: 30px;
+  }
+}
+
+@media (max-width: 456px) {
+  main {
+      padding: 14px;
+  }
 }

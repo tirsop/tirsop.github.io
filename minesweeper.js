@@ -107,20 +107,22 @@ allTiles.forEach((td) => {
     td.classList.add('has-mine');
   }
 
-  // td.addEventListener('click', openOnClick);
-  // td.addEventListener('contextmenu', flagOnClick);
+  td.addEventListener('click', openOnClick);
+  td.addEventListener('contextmenu', flagOnClick);
 
   td.addEventListener("touchstart", (e) => {
-    let startTime = e.timeStamp;
-    td.addEventListener("touchend", e2 => {
-      let endTime = e2.timeStamp;
-      let touchTime = endTime - startTime;
-      console.log(touchTime);
-      if (touchTime > longTouch) {
-        td.addEventListener('contextmenu', flagOnClick);
-      } else {
-        td.addEventListener('click', openOnClick);
-      }
-    })
+    alert("Only works on desktop");
   })
+  //   let startTime = e.timeStamp;
+  //   td.addEventListener("touchend", e2 => {
+  //     let endTime = e2.timeStamp;
+  //     let touchTime = endTime - startTime;
+  //     console.log(touchTime);
+  //     if (touchTime > longTouch) {
+  //       td.addEventListener('contextmenu', flagOnClick);
+  //     } else {
+  //       td.addEventListener('click', openOnClick);
+  //     }
+  //   })
+  // })
 });
