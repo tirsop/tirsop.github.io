@@ -57,12 +57,13 @@ p {
   padding: 0 0 14px;    /* top | horizontal | bottom */
   line-height: 24px;
 }
-section { margin-bottom: 56px; }
+section { margin-bottom: 42px; }
 section:last-child { margin-bottom: 0px; }
-header {display: none;}
-#products {display: none;}
-#contributions {display: none;}
-/* REMOVEEeeeeeeeeeee */
+
+/* header {display: none;} */
+/* #products {display: none;} */
+/* #contributions {display: none;} */
+/* REMOVEEeeeeeeeeeee --------------------------------------------------*/
 
 /* --------------- PANEL --------------- */
 .panel {
@@ -140,13 +141,42 @@ header {display: none;}
 }
 
 /* --------------- GITHUB CONTRIBUTIONS--------------- */
-#contributions div {
+.gh-img-container {
   display: flex;
+  justify-content: center;
 }
 #contributions img {
+  margin-top: 16px;
   display: block;
-  width: 100%;
+  width: 95%;
   height: auto;
+}
+.skills-group > span {
+  width: 118px;   /* so all skills_tags have same starting point */
+}
+.skills-group {
+  display: flex;
+  margin-left: 8px;
+  margin-bottom: 4px;
+}
+.skills-container {
+  flex-grow: 1;
+  max-width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 8px;
+  row-gap: 3px;
+}
+.tag {
+  font-size: 12px;
+  border: 1px solid #aaa;
+  padding: 2px 8px;
+  margin: 0;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+}
+.tag i {
+  font-size: 15px;
 }
 /* --------------- MEDIA_QUERIES--------------- */
 @media (max-width: 767px) {

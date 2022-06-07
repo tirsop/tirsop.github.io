@@ -19,10 +19,8 @@
 }
 .mobile {
   position: absolute;
-  width: 7vw;
-  height: 14vw;          /* height,width respect the vw to mantain the aspect ratio. Values for the screen-breakpoint */
-  max-width: 61px;      /* max in both to limit size in super-wide screens*/
-  max-height: 126px;
+  width: 50px;
+  height: 105px;          /* height,width respect the vw to mantain the aspect ratio. Values for the screen-breakpoint */
   border: 2.5px solid black;
   border-radius: 5px;
   bottom: -5px;
