@@ -228,4 +228,11 @@ ul li {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
+  #languages .tag {
+    width: 146px;
+    text-align: center;
+  }
+  h1 {
+    text-align: center;
+  }
 }

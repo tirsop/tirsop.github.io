@@ -199,7 +199,8 @@ section:last-child { margin-bottom: 0px; }
       align-items: center;
       width: 100%;      /* this makes that .networks goes below */
     }
-  .products_display {
+  .products_display, 
+  .experiments_display {
       grid-template-columns: repeat(2, 1fr);
     }
 }
@@ -208,6 +209,7 @@ section:last-child { margin-bottom: 0px; }
   main {
       padding: 14px;
   }
+  .product { margin: 0 24px;}
   h1 { font-size: 32px;}
   h2 { font-size: 20px;}
   h3 { font-size: 14px;}
@@ -229,7 +231,8 @@ section:last-child { margin-bottom: 0px; }
   .push-desktop .btns {
     margin: auto;
   }
-  .products_display {
+  .products_display,
+  .experiments_display {
     grid-template-columns: repeat(1, 1fr);
   }
 }
