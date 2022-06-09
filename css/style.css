@@ -60,9 +60,9 @@ p {
 section { margin-bottom: 42px; }
 section:last-child { margin-bottom: 0px; }
 
-header {display: none;}
-#products {display: none;}
-#contributions {display: none;}
+/* header {display: none;} */
+/* #products {display: none;} */
+/* #contributions {display: none;} */
 /* #experiments {display: none;} */
 /* REMOVEEeeeeeeeeeee --------------------------------------------------*/
 
@@ -94,20 +94,20 @@ header {display: none;}
 }
 .networks {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   gap: 16px;
   /* align-content: space-between; */
 }
 .networks img { display: block; }     /* so the a tag occupies just the space of the img  */
 
-
+.networks a:nth-of-type(1),
+.networks a:nth-of-type(4) {
+  display: none;
+}
 /* --------------- SELF_INTRO --------------- */
 .self-intro {
   padding: 20px 0;
   text-align: justify;
-}
-.self-intro p {
-  margin-bottom: 20px;
 }
 
 /* --------------- PRODUCTS --------------- */
@@ -118,7 +118,7 @@ header {display: none;}
   column-gap: 3%;
   row-gap: 40px;
 }
-
+#products p {padding-bottom: 0;}
 
 /* --------------- EXPERIMENNTS --------------- */
 .experiments_display {
@@ -142,6 +142,7 @@ header {display: none;}
 }
 
 /* --------------- GITHUB CONTRIBUTIONS--------------- */
+#contributions h2 {margin-bottom: 14px;}
 .gh-img-container {
   display: flex;
   justify-content: center;

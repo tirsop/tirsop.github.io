@@ -58,7 +58,7 @@ table #minesweeper td {
 .minesweeper-product {
   display: flex;
   flex-direction: column;
-  background-image: url('https://c.tenor.com/4wAtE3WwF1wAAAAd/space-gif-space.gif');
+  background-image: url('../assets/images/space.jpg');
 } 
 .minesweeper-wrapper {
   flex-grow: 1;
