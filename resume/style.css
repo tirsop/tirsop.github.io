@@ -28,10 +28,8 @@ body {
   background: #fff;
   margin: 60px auto 200px;
   /* max-width: 900px; */
-  /* max-width: 210mm; */
-  /* max-height: 297mm; */
-  size: 21cm 29.7cm;
-  margin: 30mm 45mm 30mm 45mm;
+  max-width: 210mm;
+  max-height: 297mm;
   /* padding: 5rem; */
   box-shadow: 0 0 10px #ccc;
 }
