@@ -60,6 +60,7 @@ p {
 section { margin-bottom: 42px; }
 section:last-child { margin-bottom: 0px; }
 
+.mobile {display: none;}
 /* header {display: none;} */
 /* #products {display: none;} */
 /* #contributions {display: none;} */
