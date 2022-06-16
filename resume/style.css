@@ -1,6 +1,3 @@
-/* Im not applying style to main */
-/* for japanese text maybe I need to input in a span andmake them smaller */
-
 /* --------------- INITIAL_SETUP --------------- */
 /* #tech-stack {display: none;} */
 /* #projects {display: none;} */
@@ -34,6 +31,7 @@ body {
   box-shadow: 0 0 10px #ccc;
 }
 p, ul { line-height: 1.5; }
+
 main {
   padding: 80px;
 }
