@@ -45,6 +45,33 @@
 }
 
 
+/* --------------- ICONS--------------- */
+.coding-icons {
+  font-size: 22px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 4px;
+}
+.icon-rails { font-size: 27px;}
+.icon-js { font-size: 20px;}
+
+.coding-icons {
+  position: absolute;
+  bottom: -12px;
+  left: 8px;
+}
+.code-icon {
+  background-color: #fff;
+  border-radius: 50%;
+  width: 31px;
+  height: 31px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
 /* --------------- MEDIA_QUERIES--------------- */
 @media (max-width: 767px) {
   .mobile {
