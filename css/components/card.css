@@ -1,17 +1,40 @@
-#products h3 {
-  font-size: 14px;
+/* --------------- BLACK TOOLBAR--------------- */
+.product-toolbar {
   background: #111;
   color: #fff;
-  height: 20px;
   border-radius: 5px 5px 0 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
 }
-#products h3::before {
+.product-toolbar h3,
+.product-toolbar i {
+  color: #fff;
+}
+.product-toolbar h3 {
+  font-size: 14px;
+  height: 20px;
+}
+.product-toolbar h3::before {
   content: "\00a0\00a0\00a0🔴 🟢  \00a0 \00a0";
   font-size: 0.66rem;
 }
-.product > a {
-  display: block;     /* to get rid of weird upper margin above the h3 */
+.product-title {
+  flex: 1;
 }
+.icon-gh {
+  margin: 0 6px 0 2px;
+}
+.product-toolbar > a {
+  display: inline-block;
+}
+.product > a {
+  display: block;  
+}
+
+
+/* --------------- CARD--------------- */
 .product {
   border-radius: 5px;
   box-shadow: 1px 1px 20px -5px rgb(0, 0, 0, 50%);
@@ -65,7 +88,6 @@
   border-radius: 50%;
   width: 31px;
   height: 31px;
-  box-shadow: 0 0 15px rgba(0,0,0,0.2);
   display: flex;
   justify-content: center;
   align-items: center;
