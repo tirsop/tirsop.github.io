@@ -183,14 +183,23 @@ ul li {
 .grid p {
   margin-left: 2px;
 }
-
-
-
 .year {
   font-size: 0.8rem;
   color: #aaa;
   float: right;
   line-height: 22px;
+}
+.country {
+  font-size: 12px;
+}
+.more-on {
+  font-size: 12px;
+  float: right;
+  margin-top: 14px;
+}
+.more-on-url {
+  font-style: italic;
+  color: #00427d;
 }
 
 /* ----------------- CODING PROJECTS ----------------- */
@@ -200,8 +209,11 @@ ul li {
   flex-wrap: wrap;
   column-gap: 8px;
   row-gap: 3px;
+  align-items: center;
 }
-
+.project-gh-icon {
+  font-size: 16px;
+}
 
 /* --------------- MEDIA_QUERIES--------------- */
 @media (max-width: 767px) {
