@@ -120,7 +120,7 @@ section:last-child { margin-bottom: 0;}
   padding: 8px 18px;
   /* make the button wider */
   /* display: none; */
-  /* when printing, not show download */
+  /* for printing, enable line above, so download button does not appear */
 }
 
 .icon-file-pdf {
@@ -181,7 +181,7 @@ ul li {
   margin-left: 18px;
 }
 .grid p {
-  margin-left: 2px;
+  margin-left: 3px;
 }
 .year {
   font-size: 0.8rem;
