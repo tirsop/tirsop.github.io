@@ -57,7 +57,7 @@ p {
   padding: 0 0 14px;    /* top | horizontal | bottom */
   line-height: 24px;
 }
-section { margin-bottom: 42px; }
+section { margin-bottom: 50px; }
 section:last-child { margin-bottom: 0px; }
 
 /* .mobile {display: none;} */
@@ -136,6 +136,7 @@ section:last-child { margin-bottom: 0px; }
 .experiment p {
   font-size: 14px;
   margin-left: 4px;
+  padding-bottom: 0;
 }
 
 /* --------------- GITHUB CONTRIBUTIONS--------------- */
