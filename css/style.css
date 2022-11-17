@@ -28,11 +28,11 @@ body {
 }
 h1, h2, h3 {
   font-family: 'Open Sans', sans-serif;
-  font-weight: 700;
+  font-weight: 600;
 }
 h1 {
   font-size: 38px;
-  letter-spacing: 1.5px;
+  letter-spacing: 1.4px;
 }
 h2 {
   margin-bottom: 10px;
@@ -141,6 +141,10 @@ section:last-child { margin-bottom: 0px; }
 
 /* --------------- GITHUB CONTRIBUTIONS--------------- */
 #contributions h2 {margin-bottom: 14px;}
+
+#contributions {
+  margin-bottom: 24px;
+}
 .gh-img-container {
   display: flex;
   justify-content: center;
@@ -178,6 +182,16 @@ section:last-child { margin-bottom: 0px; }
 .tag i {
   font-size: 15px;
 }
+
+
+.credits {
+  font-size: 13px;
+  text-align: center;
+  padding-bottom: 0;
+  color: rgb(92, 92, 92);
+}
+
+
 /* --------------- MEDIA_QUERIES--------------- */
 @media (max-width: 767px) {
   h1 {

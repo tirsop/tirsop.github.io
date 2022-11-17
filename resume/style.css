@@ -201,6 +201,9 @@ ul li {
   font-style: italic;
   color: #00427d;
 }
+#experience article {
+  margin-bottom: 24px;
+}
 
 /* ----------------- CODING PROJECTS ----------------- */
 .tags {

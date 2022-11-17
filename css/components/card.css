@@ -16,7 +16,10 @@
   border-radius: 5px;
   box-shadow: 1px 1px 20px -5px rgb(0, 0, 0, 50%);
   position: relative;
+  transition: 0.2s; 
 }
+.product:hover { transform: translateY(-0.10em); }
+
 .mobile {
   position: absolute;
   width: 50px;
